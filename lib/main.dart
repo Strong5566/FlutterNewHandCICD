@@ -17,9 +17,14 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[700],
         ),
         body: Center(
-          child: Image(
+          child: Column(
+            children: <Widget>[
+              Text("第一支 Flutter APP"),
+              Image(
 //                image: NetworkImage("https://i.ytimg.com/vi/Iyqf-xbMfy0/maxresdefault.jpg")
-            image: AssetImage("images/mafuyu.jpg"),
+                image: AssetImage("images/mafuyu.jpg"),
+              ),
+            ],
           ),
         ),
       ),
